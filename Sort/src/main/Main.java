@@ -29,7 +29,7 @@ public class Main {
 	}
 
 	// sorts numbers
-	public static void intSort(int a) {
+	public static String intSort(int a) {
 		int[] b = new int[a];
 		for (int i = 0; i < a; i++) {
 			System.out.println("Enter a number");
@@ -37,16 +37,17 @@ public class Main {
 		}
 		Arrays.sort(b);
 		System.out.printf("Sorted array : %s \n", Arrays.toString(b));
-		Arrays.toString(b);
+		return "Sorted array: "+Arrays.toString(b);
 	}
-
+	//this passes the test
 	// sorts a string input
-	public static void stringSort() {
+	public static String stringSort() {
 		System.out.println("Enter your string:");
 		String c = in.next();
 		char[] z = c.toCharArray();
 		Arrays.sort(z);
-		System.out.println("Sorted arrary: " + Arrays.toString(z));
+		System.out.println("Sorted array: " + Arrays.toString(z));
+		return "Sorted array: "+Arrays.toString(z);
 	}
 
 }
