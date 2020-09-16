@@ -27,7 +27,7 @@ public class Main {
 		}
 
 	}
-	//this passes the test
+	//passes test
 	// sorts numbers
 	public static String intSort(int a) {
 		int[] b = new int[a];
